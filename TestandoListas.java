@@ -12,10 +12,17 @@ public class TestandoListas {
 		aulas.add(aula1);
 		aulas.add(aula2);
 		aulas.add(aula3);
+
+		for (String aula: aulas) {
+			System.out.println("Aula: " + aula);
+		}
 		
-		System.out.println(aulas);
 		System.out.println("Removendo primeiro elemento:");
 		aulas.remove(0);
-		System.out.println(aulas);
+		
+
+		for (String aula : aulas) {
+			System.out.println("Aula: " + aula);
+		}
 	}
 }
