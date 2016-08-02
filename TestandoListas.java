@@ -21,8 +21,8 @@ public class TestandoListas {
 		aulas.remove(0);
 		
 
-		for (String aula : aulas) {
-			System.out.println("Aula: " + aula);
+		for (int  i = 0; i < aulas.size(); i++) {
+			System.out.println("Aula "+ i +": " + aulas.get(i));
 		}
 	}
 }
