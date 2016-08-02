@@ -14,5 +14,8 @@ public class TestandoListas {
 		aulas.add(aula3);
 		
 		System.out.println(aulas);
+		System.out.println("Removendo primeiro elemento:");
+		aulas.remove(0);
+		System.out.println(aulas);
 	}
 }
