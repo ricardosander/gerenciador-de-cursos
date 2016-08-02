@@ -19,6 +19,7 @@ public class TestandoListas {
 		System.out.println("Removendo segundo elemento: ");
 		cursos.remove(1);
 		System.out.println(cursos);
-		
+
+		System.out.println("Primeiro elemento da lista é: " + cursos.get(0));
 	}
 }
