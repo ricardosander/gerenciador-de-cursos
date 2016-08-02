@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class TestandoListas {
 
@@ -16,7 +17,14 @@ public class TestandoListas {
 		for (String aula : aulas) {
 			System.out.println("Aula: " + aula);
 		}
-
+		
+		System.out.println("Ordenando lista:");
+		Collections.sort(aulas);
+		aulas.forEach(aula -> {
+			System.out.println("Aula:");
+			System.out.println(aula);
+		});
+		
 		System.out.println("Removendo primeiro elemento:");
 		aulas.remove(0);
 
@@ -24,9 +32,5 @@ public class TestandoListas {
 			System.out.println("Aula " + i + ": " + aulas.get(i));
 		}
 
-		aulas.forEach(aula -> {
-			System.out.println("Aula:");
-			System.out.println(aula);
-		});
 	}
 }
