@@ -16,5 +16,9 @@ public class TestandoListas {
 
 		System.out.println(cursos);
 
+		System.out.println("Removendo segundo elemento: ");
+		cursos.remove(1);
+		System.out.println(cursos);
+		
 	}
 }
