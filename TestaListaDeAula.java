@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public class TestaListaDeAula {
@@ -14,6 +15,8 @@ public class TestaListaDeAula {
 		aulas.add(a2);
 		aulas.add(a3);
 
+		Collections.sort(aulas);
+		
 		System.out.println(aulas);
 	}
 }

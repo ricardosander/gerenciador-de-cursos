@@ -1,5 +1,5 @@
 
-public class Aula {
+public class Aula implements Comparable<Aula> {
 
 	private String titulo;
 	private int tempo;
@@ -19,5 +19,9 @@ public class Aula {
 	
 	public String toString() {
 	    return "[Aula: " + this.titulo + ", " + this.tempo+ " minutos.]";
+	}
+	
+	public int compareTo(Aula outraAula) {
+	    return this.titulo.compareTo(outraAula.titulo);
 	}
 }
