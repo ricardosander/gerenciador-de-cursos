@@ -1,3 +1,5 @@
+package br.com.alura;
+
 import java.util.List;
 
 public class TestaCurso {

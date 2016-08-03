@@ -1,3 +1,4 @@
+package br.com.alura;
 
 public class Aula implements Comparable<Aula> {
 
@@ -16,12 +17,12 @@ public class Aula implements Comparable<Aula> {
 	public int getTempo() {
 		return tempo;
 	}
-	
+
 	public String toString() {
-	    return "[Aula: " + this.titulo + ", " + this.tempo+ " minutos.]";
+		return "[Aula: " + this.titulo + ", " + this.tempo + " minutos.]";
 	}
-	
+
 	public int compareTo(Aula outraAula) {
-	    return this.titulo.compareTo(outraAula.titulo);
+		return this.titulo.compareTo(outraAula.titulo);
 	}
 }
