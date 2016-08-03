@@ -1,5 +1,5 @@
 import java.util.ArrayList;
-import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 
 public class TestaListaDeAula {
@@ -15,7 +15,7 @@ public class TestaListaDeAula {
 		aulas.add(a2);
 		aulas.add(a3);
 
-		Collections.sort(aulas);
+		aulas.sort(Comparator.comparing(Aula::getTempo));
 		
 		System.out.println(aulas);
 	}
