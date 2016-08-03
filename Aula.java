@@ -16,4 +16,8 @@ public class Aula {
 	public int getTempo() {
 		return tempo;
 	}
+	
+	public String toString() {
+	    return "[Aula: " + this.titulo + ", " + this.tempo+ " minutos.]";
+	}
 }
