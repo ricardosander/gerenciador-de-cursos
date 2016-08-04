@@ -20,5 +20,6 @@ public class TestaCurso2 {
 		List<Aula> aulas = new ArrayList<>(aulasImutaveis);
 		Collections.sort(aulas);
 		System.out.println(aulas);
+		System.out.println(curso.getTempoTotal());
 	}
 }

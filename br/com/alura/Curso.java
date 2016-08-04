@@ -30,4 +30,8 @@ public class Curso {
 	public void adiciona(Aula aula) {
 		this.aulas.add(aula);
 	}
+	
+	public int getTempoTotal() {
+		return this.aulas.stream().mapToInt(Aula::getTempo).sum();
+	}
 }
