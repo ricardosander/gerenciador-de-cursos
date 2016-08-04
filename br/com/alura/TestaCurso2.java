@@ -21,5 +21,6 @@ public class TestaCurso2 {
 		Collections.sort(aulas);
 		System.out.println(aulas);
 		System.out.println(curso.getTempoTotal());
+		System.out.println(curso);
 	}
 }
