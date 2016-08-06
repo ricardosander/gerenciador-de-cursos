@@ -30,7 +30,7 @@ public class TestaPerformance {
 		}
 		fim = System.currentTimeMillis();
 		
-		tempoInsercao = fim = inicio;
+		tempoInsercao = fim - inicio;
 		
 		inicio = System.currentTimeMillis();
 		for (Integer numero : numeros) {
