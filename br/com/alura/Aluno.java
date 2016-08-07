@@ -6,6 +6,10 @@ public class Aluno {
 	private int matricula;
 	
 	public Aluno(String nome, int matricula) {
+		
+		if (nome == null) {
+			throw new NullPointerException("Nome do aluno não pode ser nulo.");
+		}
 		this.nome = nome;
 		this.matricula = matricula;
 	}
