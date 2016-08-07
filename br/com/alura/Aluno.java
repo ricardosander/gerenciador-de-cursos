@@ -19,6 +19,18 @@ public class Aluno {
 	}
 	
 	@Override
+	public int hashCode() {
+		return this.nome.hashCode();
+	}
+	
+	@Override
+	public boolean equals(Object obj) {
+		
+		Aluno outroAluno = (Aluno) obj;
+		return this.nome.equals(outroAluno.getNome());
+	}
+	
+	@Override
 	public String toString() {
 		return "[Nome: " + this.nome + ", matrícula: " + this.matricula + "]";
 	}
