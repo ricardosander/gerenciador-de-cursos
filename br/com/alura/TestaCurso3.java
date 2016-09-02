@@ -1,5 +1,9 @@
 package br.com.alura;
 
+import java.util.Iterator;
+import java.util.List;
+import java.util.Set;
+
 public class TestaCurso3 {
 
 	public static void main(String[] args) {
@@ -18,6 +22,10 @@ public class TestaCurso3 {
 		curso.matricula(a2);
 		curso.matricula(a3);
 		
-		curso.getAlunos().forEach(System.out::println);
+		Set<Aluno> alunos = curso.getAlunos();
+		Iterator<Aluno> iterator = alunos.iterator();
+		while (iterator.hasNext()) {
+			System.out.println(iterator.next());
+		}
 	}
 }
