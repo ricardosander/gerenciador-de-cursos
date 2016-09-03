@@ -1,7 +1,6 @@
 package br.com.alura;
 
 import java.util.Iterator;
-import java.util.List;
 import java.util.Set;
 
 public class TestaCurso3 {
@@ -27,5 +26,10 @@ public class TestaCurso3 {
 		while (iterator.hasNext()) {
 			System.out.println(iterator.next());
 		}
+		
+		System.out.println("Procurando pela matrícula 2:");
+		System.out.println(curso.buscaMatriculado(2));
+		System.out.println("Procurando pela matrícula 4:");
+		System.out.println(curso.buscaMatriculado(4));
 	}
 }
